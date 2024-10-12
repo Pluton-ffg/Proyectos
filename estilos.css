@@ -1,0 +1,101 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1C1E26; /* Fondo principal oscuro */
+    color: #E2F1E7; /* Texto principal claro */
+    margin: 0;
+    padding: 0;
+    cursor: url('Masters/Cursor-mimikyu1.cur'), auto; /* Cursor por defecto usando formato .cur */
+}
+
+/* Cambia el cursor cuando está sobre elementos clickeables */
+button, .ver {
+    cursor: url('Masters/Cursor-mimikyu2.cur'), pointer; /* Cursor al hacer hover en algo clickeable usando formato .cur */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Título coreano */
+#titulo-coreano {
+    color: red;
+    font-size: 2rem;
+}
+
+/* Sección de proyectos */
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* Estilos para los apartados de proyectos */
+.proyecto {
+    background-color: #B5D1CF; /* Fondo de las tarjetas */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05); /* Hover Zoom */
+}
+
+/* Botón DEV con Pulse y Glow Effect */
+.dev {
+    position: fixed; /* Botón DEV en esquina inferior derecha */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #374151; /* Gris oscuro */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.dev:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Efecto Glow */
+    animation: pulse 1.5s infinite; /* Efecto Pulse */
+}
+
+/* Animación Pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para los botones "Ver" */
+.ver {
+    background-color: #2A2B2E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ver:hover {
+    background-color: #3A3B3E; /* Hover en los botones Ver */
+}
+
+/* Botón deshabilitado */
+.ver.disabled {
+    background-color: #6B7280; /* Gris claro */
+    cursor: not-allowed;
+}
