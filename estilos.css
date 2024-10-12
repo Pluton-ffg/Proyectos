@@ -5,12 +5,6 @@ body {
     color: #E2F1E7; /* Texto principal claro */
     margin: 0;
     padding: 0;
-    cursor: url('Cursor-mimikyu1.cur'), auto; /* Cursor por defecto usando archivos en la raíz */
-}
-
-/* Cambia el cursor cuando está sobre elementos clickeables */
-button, .ver {
-    cursor: url('Cursor-mimikyu2.cur'), pointer; /* Cursor para elementos clickeables usando archivos en la raíz */
 }
 
 /* Contenedor principal */
@@ -46,37 +40,19 @@ button, .ver {
     transform: scale(1.05); /* Hover Zoom */
 }
 
-/* Botón DEV con Pulse y Glow Effect */
+/* Estilo para el botón DEV */
 .dev {
     position: fixed; /* Botón DEV en esquina inferior derecha */
     bottom: 20px;
     right: 20px;
-    padding: 10px 20px;
-    background-color: #374151; /* Gris oscuro */
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Apuntador al pasar el mouse */
 }
 
-.dev:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Efecto Glow */
-    animation: pulse 1.5s infinite; /* Efecto Pulse */
-}
-
-/* Animación Pulse */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+.dev img {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción */
 }
 
 /* Estilos para los botones "Ver" */
