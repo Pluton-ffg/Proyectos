@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Proyectos</title>
-  <link rel="stylesheet" href="estilos.css"> <!-- Vínculo a los estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header>
-    <h1>Mis Proyectos</h1>
-  </header>
-
-  <section class="proyectos">
-    <!-- Proyecto GUGA -->
-    <div class="proyecto">
-      <h2>GUGA</h2>
-      <button onclick="window.location.href='GUGA.html'">Ver</button> <!-- Redirige a GUGA.html -->
+    <!-- Encabezado principal con título y botón DEV -->
+    <div class="header">
+        <h1>널 사랑해, 난 행복해.</h1>
+        <button id="dev-button">DEV</button>
     </div>
+    
+    <!-- Sección de proyectos -->
+    <section class="projects-section">
+        <h2>Proyectos</h2>
+        <!-- Tarjetas de proyectos -->
+        <div class="project-card">
+            <h3>GUGA</h3>
+            <p>Teclado Virtual</p>
+            <button class="view-btn">👁️ Ver</button>
+        </div>
+        <div class="project-card">
+            <h3>Key-Source</h3>
+            <p>Llave de seguridad</p>
+            <button class="view-btn">👁️ Ver</button>
+        </div>
+        <div class="project-card disabled">
+            <h3>Próximo...</h3>
+            <p>???</p>
+            <button class="disabled-btn">🚫 Todavía no podés ver</button>
+        </div>
+    </section>
 
-    <!-- Proyecto Key-Source -->
-    <div class="proyecto">
-      <h2>Key-Source</h2>
-      <button onclick="window.location.href='Key-Source.html'">Ver</button> <!-- Redirige a Key-Source.html -->
+    <!-- Footer con botón DEV y logo de Mimikyu -->
+    <div class="footer">
+        <button id="dev-button-bottom">
+            <img src="mimikyu-logo.png" alt="DEV">
+        </button>
     </div>
-  </section>
-
-  <!-- Botón DEV con animación al hacer hover -->
-  <section class="dev-section">
-    <button id="boton-dev" onclick="window.location.href='https://github.com/tuusuario'"> <!-- Enlace a tu GitHub -->
-      <img src="mimikyu-logo.png" alt="Logo DEV">
-    </button>
-    <div>
-      <button onclick="window.location.href='https://www.reddit.com/tuusuario'">Reddit</button>
-      <button onclick="window.location.href='https://www.instagram.com/tuusuario'">Instagram</button>
-    </div>
-  </section>
-
-  <script src="scripts.js"></script> <!-- Vínculo a tu archivo JS -->
 </body>
 </html>
