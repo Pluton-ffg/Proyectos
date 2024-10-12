@@ -7,38 +7,36 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Encabezado principal con título y botón DEV -->
-    <div class="header">
-        <h1>널 사랑해, 난 행복해.</h1>
-        <button id="dev-button">DEV</button>
+    <!-- Barra superior con texto en coreano -->
+    <div class="header-bar">
+        <h1 id="korean-text">널 사랑해, 난 행복해.</h1>
     </div>
+    
+    <!-- Encabezado principal con botón DEV -->
+    <button id="dev-button">
+        <img src="mimikyu-logo.png" alt="DEV">
+    </button>
     
     <!-- Sección de proyectos -->
     <section class="projects-section">
-        <h2>Proyectos</h2>
         <!-- Tarjetas de proyectos -->
-        <div class="project-card">
+        <div class="project-card" id="guga">
             <h3>GUGA</h3>
             <p>Teclado Virtual</p>
-            <button class="view-btn">👁️ Ver</button>
+            <button class="view-btn">Ver</button>
         </div>
-        <div class="project-card">
+        <div class="project-card" id="key-source">
             <h3>Key-Source</h3>
             <p>Llave de seguridad</p>
-            <button class="view-btn">👁️ Ver</button>
+            <button class="view-btn">Ver</button>
         </div>
         <div class="project-card disabled">
             <h3>Próximo...</h3>
             <p>???</p>
-            <button class="disabled-btn">🚫 Todavía no podés ver</button>
+            <button class="disabled-btn">Todavía no podés ver</button>
         </div>
     </section>
 
-    <!-- Footer con botón DEV y logo de Mimikyu -->
-    <div class="footer">
-        <button id="dev-button-bottom">
-            <img src="mimikyu-logo.png" alt="DEV">
-        </button>
-    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
