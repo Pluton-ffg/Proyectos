@@ -7,44 +7,50 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
+/* Barra superior */
+.header-bar {
+    background-color: #000; /* Fondo negro */
+    padding: 5px 20px; /* Espaciado */
+    text-align: left; /* Alinear a la izquierda */
 }
 
-h1 {
+/* Texto en coreano en la barra superior */
+#korean-text {
+    color: red;
+    font-size: 1.5rem; /* Tamaño más pequeño */
     margin: 0;
-    font-size: 2rem;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
-/* Botón DEV superior */
+#korean-text:hover {
+    color: red;
+}
+
+/* Botón DEV con imagen */
 #dev-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #374151; /* Gris oscuro */
-    color: white;
+    background-color: transparent;
     border: none;
-    padding: 10px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-#dev-button:hover {
-    background-color: #6B7280; /* Cambia al gris claro */
+#dev-button img {
+    width: 50px; /* Tamaño de la imagen */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#dev-button img:hover {
+    transform: scale(1.1); /* Aumenta un 10% al hacer hover */
 }
 
 /* Sección de Proyectos */
 .projects-section {
     text-align: center;
     padding: 50px;
-}
-
-.projects-section h2 {
-    font-size: 2.5rem;
 }
 
 .project-card {
@@ -54,6 +60,11 @@ h1 {
     margin: 20px;
     display: inline-block;
     width: 25%; /* Ancho de las tarjetas */
+    transition: transform 0.3s ease; /* Añadir transición para animación */
+}
+
+.project-card:hover {
+    transform: scale(1.15); /* Crece un 15% */
 }
 
 .project-card h3 {
@@ -80,26 +91,4 @@ h1 {
     padding: 10px 20px;
     cursor: not-allowed;
     border-radius: 5px;
-}
-
-/* Footer y botón DEV */
-.footer {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-}
-
-#dev-button-bottom {
-    background-color: transparent;
-    border: none;
-}
-
-#dev-button-bottom img {
-    width: 100px; /* Ajuste de tamaño del logo */
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-#dev-button-bottom img:hover {
-    transform: scale(1.1); /* Aumenta un 10% al hacer hover */
 }
