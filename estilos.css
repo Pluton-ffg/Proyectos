@@ -5,12 +5,12 @@ body {
     color: #E2F1E7; /* Texto principal claro */
     margin: 0;
     padding: 0;
-    cursor: url('Masters/Cursor-mimikyu1.cur'), auto; /* Cursor por defecto usando formato .cur */
+    cursor: url('Cursor-mimikyu1.cur'), auto; /* Cursor por defecto usando archivos en la raíz */
 }
 
 /* Cambia el cursor cuando está sobre elementos clickeables */
 button, .ver {
-    cursor: url('Masters/Cursor-mimikyu2.cur'), pointer; /* Cursor al hacer hover en algo clickeable usando formato .cur */
+    cursor: url('Cursor-mimikyu2.cur'), pointer; /* Cursor para elementos clickeables usando archivos en la raíz */
 }
 
 /* Contenedor principal */
