@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Key-Source</title>
-    <link rel="stylesheet" href="../estilos.css">
+    <title>Key-Source - Llave de seguridad</title>
+    <link rel="stylesheet" href="estilos-ks.css">
 </head>
 <body>
-    <h1>Detalles del Proyecto Key-Source</h1>
-    <p>Descripción de la llave de seguridad...</p>
+    <div class="container">
+        <header>
+            <h1 class="title">Galería de Vistas Previas - Key-Source</h1>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="pdfs">PDFs</button>
+                <button class="tab-button" data-tab="images">Imágenes</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="pdfs" class="tab-content active">
+                <div class="card">
+                    <h2>Documento 1</h2>
+                    <div class="preview failed">Failed to load PDF file.</div>
+                </div>
+                <div class="card">
+                    <h2>Documento 2</h2>
+                    <div class="preview failed">Failed to load PDF file.</div>
+                </div>
+            </section>
+
+            <section id="images" class="tab-content">
+                <div class="card">
+                    <h2>Imagen 1</h2>
+                    <img src="path/to/image1.jpg" alt="Imagen 1" class="preview">
+                </div>
+                <div class="card">
+                    <h2>Imagen 2</h2>
+                    <img src="path/to/image2.jpg" alt="Imagen 2" class="preview">
+                </div>
+            </section>
+        </main>
+
+        <button id="back-button">Volver</button>
+    </div>
+
+    <script src="scripts-ks.js"></script>
 </body>
 </html>
