@@ -5,7 +5,7 @@ document.getElementById("dev-button").addEventListener("click", function() {
 
 // Cambiar texto en coreano a español al pasar el cursor y mantener el color rojo
 document.getElementById("korean-text").addEventListener("mouseenter", function() {
-    this.innerText = "Te amo, estoy feliz";
+    this.innerText = "Te amo, soy feliz";
 });
 
 document.getElementById("korean-text").addEventListener("mouseleave", function() {
