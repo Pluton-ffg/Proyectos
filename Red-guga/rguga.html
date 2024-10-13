@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red GUGA</title>
-    <link rel="stylesheet" href="../estilos.css">
+    <title>GUGA - Teclado Virtual</title>
+    <link rel="stylesheet" href="estilos-gg.css">
 </head>
 <body>
-    <h1>Detalles del Proyecto GUGA</h1>
-    <p>Descripción del teclado virtual...</p>
+    <div class="container">
+        <header>
+            <h1 class="title">Galería de Vistas Previas - GUGA</h1>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="pdfs">PDFs</button>
+                <button class="tab-button" data-tab="images">Imágenes</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="pdfs" class="tab-content active">
+                <div class="card">
+                    <h2>Documento 1</h2>
+                    <div class="preview failed">Failed to load PDF file.</div>
+                </div>
+                <div class="card">
+                    <h2>Documento 2</h2>
+                    <div class="preview failed">Failed to load PDF file.</div>
+                </div>
+            </section>
+
+            <section id="images" class="tab-content">
+                <div class="card">
+                    <h2>Imagen 1</h2>
+                    <img src="path/to/image1.jpg" alt="Imagen 1" class="preview">
+                </div>
+                <div class="card">
+                    <h2>Imagen 2</h2>
+                    <img src="path/to/image2.jpg" alt="Imagen 2" class="preview">
+                </div>
+            </section>
+        </main>
+
+        <button id="back-button">Volver</button>
+    </div>
+
+    <script src="scripts-gg.js"></script>
 </body>
 </html>
