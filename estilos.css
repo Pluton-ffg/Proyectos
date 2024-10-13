@@ -51,7 +51,6 @@ body {
     transform: scale(1.1); /* Aumenta un 10% al hacer hover */
 }
 
-
 /* Sección de Proyectos */
 .projects-section {
     text-align: center;
@@ -83,6 +82,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .view-btn:hover {
